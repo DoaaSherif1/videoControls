@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Controls</title>
+</head>
+<body background="/images/bc4.png" style="background-size: cover;">
+    <video src="./videos/Set Fire to the Rain.mp4" style="height: 500px; width: 90%; margin-left: 2%;  "></video>
+    <input type="range" name="timeSlider" value="0" min="0" max="240" step="1" style="margin-left: 27%; width:37%;" onchange="changeValue(this.value)">
+    <span>4:00</span> <br/>
+    <div>
+        <input type="button" value="Play" style="margin-left: 27%;font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <input type="button" value="Stop"  style="font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <input type="button" value="<<" >
+        <input type="button" value="<" >
+        <input type="button" value=">" >
+        <input type="button" value=">>" >
+        <input type="range" name="volume" value="100" min="0" max="100" step="10">
+        <input type="button" value="Mute" style="font-weight: bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+
+    </div>
+    <div style="font-size: large; font-family: 'Times New Roman', Times, serif;font-weight: bold; margin-left: 27%;">
+        Speed: <input type="range" name="speed" value="1" min="1" max="2" step="0.25">
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
